@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // 这里可以添加具体的业务逻辑，例如使用 Scanner 读取用户输入
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入一些内容:");
+        String input = scanner.nextLine();
+        System.out.println("你输入的内容是: " + input);
+        scanner.close();
+    }
+}
