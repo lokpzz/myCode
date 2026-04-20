@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>查快递（明着问，用GET）</h3>
+  <!-- method="GET" 就是告诉浏览器：数据跟在网址后面 -->
+  <form action="https://www.kuaidi100.com" method="GET">
+    快递单号：<input type="text" name="nu" value="123456">
+    <button type="submit">查快递</button>
+  </form>
+  <h3>登录（偷偷给，用POST）</h3>
+  <!-- method="POST" 就是告诉浏览器：数据藏起来，不跟在网址后面 -->
+  <form action="https://wx.qq.com/login" method="POST">
+    手机号：<input type="text" name="phone" value="13800138000"><br>
+    密码：<input type="password" name="pwd" value="laoye666"><br>
+    <button type="submit">登录</button>
+  </form>
+</body>
+</html>

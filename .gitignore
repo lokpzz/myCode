@@ -1,0 +1,18 @@
+# 可执行文件
+*.exe
+*.out
+*.class
+*.lingma
+
+# IDE配置文件
+.vscode/
+.idea/
+*.sublime-project
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志和临时文件
+*.log
+*.tmp
