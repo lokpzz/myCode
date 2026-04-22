@@ -16,3 +16,4 @@ for item in list2[0]:
 #取出嵌套列表的元素
 for item in list2[1]:
     print(item)
+
