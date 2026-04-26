@@ -94,21 +94,8 @@ git reset --hard 提交编号          # 回滚到指定版本
 
 
 
-【九、.gitignore 常用忽略规则】
 
-*.pyc
-
-__pycache__/
-
-.idea/
-
-*.log
-
-venv/
-
-
-
-【十、标准开发流程】
+【九、标准开发流程】
 
 git pull
 
@@ -120,7 +107,7 @@ git push origin main
 
 
 
-【十一、常见问题修复】
+【十、常见问题修复】
 
 git merge --abort                 # 终止冲突合并
 
