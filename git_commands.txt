@@ -1,0 +1,131 @@
+Git-Cheat-Sheet（精简版）.txt
+
+【一、首次全局配置】
+
+git config --global user.name "用户名"
+
+git config --global user.email "邮箱"
+
+git config --global --list        # 查看配置
+
+
+
+【二、仓库初始化/克隆】
+
+git init                          # 初始化本地仓库
+
+git clone 远程仓库地址             # 克隆远程仓库
+
+
+
+【三、文件状态查看】
+
+git status                        # 查看文件状态
+
+git status -s                     # 简洁状态
+
+git diff                          # 查看代码修改差异
+
+
+
+【四、暂存与提交】
+
+git add 文件名                     # 暂存单个文件
+
+git add .                         # 暂存所有文件
+
+git commit -m "提交备注"           # 提交到本地仓库
+
+git commit -am "提交备注"          # 直接提交所有修改
+
+
+
+【五、日志查看】
+
+git log                           # 完整提交日志
+
+git log --oneline                 # 精简单行日志
+
+git log -3                        # 查看最近3条记录
+
+
+
+【六、分支操作】
+
+git branch                        # 查看所有分支
+
+git branch 分支名                  # 创建分支
+
+git checkout 分支名                # 切换分支
+
+git checkout -b 新分支名          # 创建并切换分支
+
+git merge 分支名                   # 合并分支到当前分支
+
+git branch -d 分支名               # 删除本地分支
+
+
+
+【七、远程仓库操作】
+
+git remote add origin 远程地址     # 关联远程仓库
+
+git remote -v                     # 查看远程关联信息
+
+git push origin 分支名             # 推送代码到远程
+
+git push -u origin 分支名          # 首次推送绑定分支
+
+git pull                          # 拉取远程最新代码
+
+
+
+【八、撤销与回滚（常用）】
+
+git checkout -- .                 # 撤销工作区所有修改
+
+git reset HEAD .                  # 撤销所有暂存（保留修改）
+
+git reset --soft HEAD^            # 回滚上次提交（保留代码）
+
+git reset --hard HEAD^            # 强制回滚上次提交（清空修改）
+
+git reset --hard 提交编号          # 回滚到指定版本
+
+
+
+【九、.gitignore 常用忽略规则】
+
+*.pyc
+
+__pycache__/
+
+.idea/
+
+*.log
+
+venv/
+
+
+
+【十、标准开发流程】
+
+git pull
+
+git add .
+
+git commit -m "功能/修复更新"
+
+git push origin main
+
+
+
+【十一、常见问题修复】
+
+git merge --abort                 # 终止冲突合并
+
+git fetch --all
+
+git reset --hard origin/main      # 强制同步远程代码
+
+git commit --amend                # 修改上次提交备注
